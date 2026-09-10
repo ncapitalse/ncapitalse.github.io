@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不安人-解析、理解与应对不安情绪的心理指南</title>
+<meta name="description" content="不安人指长期处于不安情绪中的人群。本页从心理与生活角度解析不安的表现、成因、自我调适方法与求助路径，帮助理解不安情绪并找到缓解方向。">
+<meta name="keywords" content="不安人,不安情绪,焦虑,心理调适,情绪管理,心理健康">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1f2733;
+    --ink-soft:#4a5568;
+    --line:#e2e6ee;
+    --bg:#f6f7fb;
+    --card:#ffffff;
+    --accent:#4a6fa5;
+    --accent-deep:#33507c;
+    --accent-soft:#eef2f9;
+    --warm:#c98a5e;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(31,39,51,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* ---------- header ---------- */
+  .site-header{
+    background:linear-gradient(160deg,#2f3f5c 0%,#3f5578 60%,#4a6fa5 100%);
+    color:#fff;
+    padding:0 0 46px;
+    position:relative;
+    overflow:hidden;
+  }
+  .site-header::after{
+    content:"";
+    position:absolute;
+    right:-120px;top:-120px;
+    width:360px;height:360px;
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+  }
+  .topbar{
+    max-width:1120px;
+    margin:0 auto;
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.15rem;
+    font-weight:700;
+    letter-spacing:.5px;
+  }
+  .brand .dot{
+    width:12px;height:12px;border-radius:50%;
+    background:#f2c9a0;
+    box-shadow:0 0 0 4px rgba(242,201,160,.25);
+  }
+  .topnav{
+    display:flex;
+    gap:22px;
+    font-size:.93rem;
+    flex-wrap:wrap;
+  }
+  .topnav a{
+    opacity:.85;
+    padding-bottom:3px;
+    border-bottom:1px solid transparent;
+    transition:.2s;
+  }
+  .topnav a:hover{opacity:1;border-bottom-color:#f2c9a0;}
+
+  .hero{
+    max-width:1120px;
+    margin:0 auto;
+    padding:26px 22px 0;
+    position:relative;
+    z-index:1;
+  }
+  .hero h1{
+    font-size:2.1rem;
+    line-height:1.35;
+    font-weight:800;
+    letter-spacing:.5px;
+    margin-bottom:14px;
+  }
+  .hero h1 span{
+    color:#f2c9a0;
+  }
+  .hero p.lead{
+    max-width:760px;
+    font-size:1.02rem;
+    color:rgba(255,255,255,.88);
+    margin-bottom:24px;
+  }
+  .hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+  }
+  .hero-tags span{
+    font-size:.82rem;
+    padding:5px 14px;
+    border-radius:999px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.22);
+    color:rgba(255,255,255,.92);
+  }
+  .hero-actions{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:11px 26px;
+    border-radius:999px;
+    font-size:.95rem;
+    font-weight:600;
+    transition:.22s;
+    cursor:pointer;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:#f2c9a0;color:#2f3f5c;}
+  .btn-primary:hover{background:#f7dcbd;transform:translateY(-2px);}
+  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
+
+  /* ---------- layout ---------- */
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 22px;
+  }
+  main{padding:52px 0 20px;}
+  section{margin-bottom:58px;}
+  .sec-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:22px;
+    flex-wrap:wrap;
+  }
+  .sec-head h2{
+    font-size:1.4rem;
+    font-weight:800;
+    color:var(--accent-deep);
+    position:relative;
+    padding-left:16px;
+  }
+  .sec-head h2::before{
+    content:"";
+    position:absolute;
+    left:0;top:50%;
+    transform:translateY(-50%);
+    width:6px;height:22px;
+    border-radius:4px;
+    background:var(--warm);
+  }
+  .sec-head .note{
+    font-size:.88rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- intro ---------- */
+  .intro-grid{
+    display:grid;
+    grid-template-columns:1.6fr 1fr;
+    gap:26px;
+    align-items:start;
+  }
+  .intro-main{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:30px 32px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .intro-main p{margin-bottom:16px;color:var(--ink-soft);}
+  .intro-main p:last-child{margin-bottom:0;}
+  .intro-main strong{color:var(--ink);}
+  .intro-side{
+    background:var(--accent-soft);
+    border-radius:var(--radius);
+    padding:26px 26px;
+    border:1px solid #dbe3f0;
+  }
+  .intro-side h3{
+    font-size:1.02rem;
+    color:var(--accent-deep);
+    margin-bottom:14px;
+    font-weight:700;
+  }
+  .intro-side ul{list-style:none;}
+  .intro-side li{
+    font-size:.92rem;
+    color:var(--ink-soft);
+    padding:9px 0 9px 22px;
+    position:relative;
+    border-bottom:1px dashed #cdd8ea;
+  }
+  .intro-side li:last-child{border-bottom:none;}
+  .intro-side li::before{
+    content:"";
+    position:absolute;
+    left:0;top:17px;
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--accent);
+  }
+
+  /* ---------- signs cards ---------- */
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:26px 24px;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    transition:.24s;
+  }
+  .card:hover{transform:translateY(-4px);border-color:#c9d6ec;}
+  .card .icon{
+    width:42px;height:42px;
+    border-radius:11px;
+    background:var(--accent-soft);
+    color:var(--accent-deep);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.1rem;
+    font-weight:800;
+    margin-bottom:16px;
+  }
+  .card h3{
+    font-size:1.05rem;
+    margin-bottom:10px;
+    color:var(--ink);
+  }
+  .card p{
+    font-size:.9rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- causes ---------- */
+  .cause-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+  }
+  .cause-item{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:24px 26px;
+    border-left:4px solid var(--accent);
+    box-shadow:var(--shadow);
+  }
+  .cause-item h3{
+    font-size:1rem;
+    margin-bottom:8px;
+    color:var(--accent-deep);
+  }
+  .cause-item p{font-size:.9rem;color:var(--ink-soft);}
+
+  /* ---------- steps ---------- */
+  .steps{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    background:var(--card);
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+  }
+  .step{
+    display:grid;
+    grid-template-columns:70px 1fr;
+    gap:20px;
+    padding:26px 30px;
+    border-bottom:1px solid var(--line);
+    align-items:start;
+  }
+  .step:last-child{border-bottom:none;}
+  .step .num{
+    font-size:1.5rem;
+    font-weight:800;
+    color:var(--accent);
+    opacity:.55;
+    line-height:1.2;
+  }
+  .step h3{
+    font-size:1.03rem;
+    margin-bottom:8px;
+  }
+  .step p{font-size:.9rem;color:var(--ink-soft);}
+
+  /* ---------- table ---------- */
+  .table-wrap{
+    overflow-x:auto;
+    background:var(--card);
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:620px;
+  }
+  th,td{
+    padding:15px 20px;
+    text-align:left;
+    font-size:.9rem;
+    border-bottom:1px solid var(--line);
+  }
+  th{
+    background:var(--accent-soft);
+    color:var(--accent-deep);
+    font-weight:700;
+    white-space:nowrap;
+  }
+  td{color:var(--ink-soft);}
+  tr:last-child td{border-bottom:none;}
+  td strong{color:var(--ink);}
+
+  /* ---------- faq ---------- */
+  .faq-item{
+    background:var(--card);
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    margin-bottom:14px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    font-family:inherit;
+    font-size:.98rem;
+    font-weight:700;
+    color:var(--ink);
+    padding:20px 54px 20px 24px;
+    cursor:pointer;
+    position:relative;
+    line-height:1.6;
+  }
+  .faq-q::after{
+    content:"+";
+    position:absolute;
+    right:24px;top:50%;
+    transform:translateY(-50%);
+    font-size:1.3rem;
+    color:var(--accent);
+    transition:.25s;
+    font-weight:400;
+  }
+  .faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+    padding:0 24px;
+  }
+  .faq-item.open .faq-a{max-height:400px;padding-bottom:20px;}
+  .faq-a p{font-size:.9rem;color:var(--ink-soft);}
+
+  /* ---------- notice ---------- */
+  .notice{
+    background:#fdf6ef;
+    border:1px solid #f0dcc6;
+    border-radius:var(--radius);
+    padding:26px 30px;
+  }
+  .notice h3{
+    font-size:1.02rem;
+    color:#9a6a3c;
+    margin-bottom:12px;
+  }
+  .notice p{
+    font-size:.9rem;
+    color:#7d6248;
+    margin-bottom:10px;
+  }
+  .notice p:last-child{margin-bottom:0;}
+
+  /* ---------- footer ---------- */
+  .site-footer{
+    background:#2b3444;
+    color:rgba(255,255,255,.72);
+    padding:44px 0 26px;
+    margin-top:40px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:32px;
+    margin-bottom:30px;
+  }
+  .footer-grid h4{
+    color:#fff;
+    font-size:.98rem;
+    margin-bottom:14px;
+    font-weight:700;
+  }
+  .footer-grid p, .footer-grid li{
+    font-size:.86rem;
+    line-height:1.9;
+  }
+  .footer-grid ul{list-style:none;}
+  .footer-grid ul a:hover{color:#f2c9a0;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding-top:20px;
+    font-size:.82rem;
+    text-align:center;
+    color:rgba(255,255,255,.5);
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .intro-grid{grid-template-columns:1fr;}
+    .card-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15px;}
+    .hero h1{font-size:1.55rem;}
+    .topnav{gap:14px;font-size:.86rem;}
+    .card-grid{grid-template-columns:1fr;}
+    .cause-list{grid-template-columns:1fr;}
+    .step{grid-template-columns:44px 1fr;padding:22px 20px;gap:14px;}
+    .step .num{font-size:1.2rem;}
+    .intro-main{padding:24px 20px;}
+    .footer-grid{grid-template-columns:1fr;gap:24px;}
+    main{padding:36px 0 10px;}
+    section{margin-bottom:44px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span>不安人 · 情绪观察站</div>
+    <nav class="topnav">
+      <a href="#understand">理解不安</a>
+      <a href="#signs">常见表现</a>
+      <a href="#causes">成因分析</a>
+      <a href="#methods">调适方法</a>
+      <a href="#compare">状态对照</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>理解<span>不安人</span>：不安情绪从哪里来，又该如何安放</h1>
+    <p class="lead">
+      “不安人”常被用来形容那些长期处在紧张、担忧、难以放松状态中的人。不安本身不是病，而是一种信号——它提示我们，内心的某些需要、边界或安全感正受到挑战。本页从日常心理角度出发，帮助你看清不安的样子、来源与应对方式。
+    </p>
+    <div class="hero-tags">
+      <span>情绪识别</span>
+      <span>焦虑调适</span>
+      <span>自我关照</span>
+      <span>求助路径</span>
+      <span>日常练习</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#understand">开始了解</a>
+      <a class="btn btn-ghost" href="#methods">查看调适方法</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 理解不安 -->
+  <section id="understand">
+    <div class="sec-head">
+      <h2>不安人到底在不安什么</h2>
+      <span class="note">先看清情绪，再谈应对</span>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-main">
+        <p>
+          被称为“不安人”，往往不是指某一种正式的心理诊断，而是对一种持续状态的描述：<strong>心里总像悬着一件事，难以真正放松</strong>。可能表现为对未来反复担忧、对他人评价过度敏感、在做出决定前反复纠结，或者身体上长期紧绷、睡不踏实。
+        </p>
+        <p>
+          不安情绪有一个重要特点：它并不总是由明确的危险引起。很多时候，触发它的只是模糊的“万一”——万一做不好、万一被否定、万一失去控制。正因为对象模糊，人很难通过解决某个具体问题来彻底消除它，于是不安便长期停留。
+        </p>
+        <p>
+          需要说明的是，<strong>适度的不安是有功能的</strong>。它让人保持警觉、提前准备、避免风险。问题不在于“有没有不安”，而在于不安的强度、持续时间和它对你生活的占用程度。当不安开始影响睡眠、工作、关系或让你长期疲惫时，就值得认真对待。
+        </p>
+        <p>
+          本页不提供诊断，也不替代专业帮助。它的目标是把“不安”这件事讲清楚，让你知道它通常如何运作，以及有哪些日常可用的缓解方向。
+        </p>
+      </div>
+      <aside class="intro-side">
+        <h3>快速自查：你最近是否常这样</h3>
+        <ul>
+          <li>事情还没发生，已经反复设想最坏结果</li>
+          <li>空闲下来反而更慌，必须找事填满</li>
+          <li>做决定后仍反复怀疑自己选错了</li>
+          <li>身体紧绷、肩颈僵硬、容易疲惫</li>
+          <li>睡前思绪停不下来，入睡困难</li>
+          <li>对他人语气、表情格外在意</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 常见表现 -->
+  <section id="signs">
+    <div class="sec-head">
+      <h2>不安情绪常见的几个面向</h2>
+      <span class="note">情绪、身体、思维、行为往往同时出现</span>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="icon">情</div>
+        <h3>情绪层面</h3>
+        <p>持续的紧张、烦躁、易被小事触动，或一种说不清来源的沉重感。有时会突然感到心慌，却又说不清在担心什么。</p>
+      </article>
+      <article class="card">
+        <div class="icon">身</div>
+        <h3>身体层面</h3>
+        <p>心跳加快、呼吸变浅、胃部不适、肌肉紧绷、头痛或睡眠变差。身体常常比语言更早表达不安。</p>
+      </article>
+      <article class="card">
+        <div class="icon">思</div>
+        <h3>思维层面</h3>
+        <p>反复推演、过度预判、注意力难以集中，容易把中性信息解读为负面信号，形成“越想越不安”的循环。</p>
+      </article>
+      <article class="card">
+        <div class="icon">行</div>
+        <h3>行为层面</h3>
+        <p>反复确认、回避某些场合、拖延或过度准备，用忙碌来压住不安，也可能因此减少社交和休息。</p>
+      </article>
+      <article class="card">
+        <div class="icon">眠</div>
+        <h3>睡眠与节律</h3>
+        <p>入睡困难、夜间易醒、早醒，或白天精力不足。睡眠与不安常相互影响，形成彼此强化的循环。</p>
+      </article>
+      <article class="card">
+        <div class="icon">关</div>
+        <h3>关系层面</h3>
+        <p>害怕被拒绝或误解，过度迎合、难以拒绝他人，或在关系中反复寻求确认，事后又感到消耗。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 成因 -->
+  <section id="causes">
+    <div class="sec-head">
+      <h2>不安通常从哪里来</h2>
+      <span class="note">成因往往交织，而非单一原因</span>
+    </div>
+    <div class="cause-list">
+      <div class="cause-item">
+        <h3>气质与遗传倾向</h3>
+        <p>有些人天生对刺激更敏感，情绪反应更快、更强，恢复也更慢。这并非缺点，而是需要更早学会调节节奏。</p>
+      </div>
+      <div class="cause-item">
+        <h3>成长经历与依恋模式</h3>
+        <p>如果早年环境中情绪常被忽视或否定，人可能学会用警觉来保护自己，成年后仍习惯性地预判危险。</p>
+      </div>
+      <div class="cause-item">
+        <h3>长期压力与不确定性</h3>
+        <p>工作变动、经济压力、健康担忧、关系不稳等持续存在的变量，会让身体长期处于待命状态。</p>
+      </div>
+      <div class="cause-item">
+        <h3>思维方式的影响</h3>
+        <p>灾难化、非黑即白、过度自责等思维习惯，会放大风险、缩小自身应对能力，使不安被不断喂养。</p>
+      </div>
+      <div class="cause-item">
+        <h3>生活方式因素</h3>
+        <p>睡眠不足、咖啡因摄入过多、久坐缺乏运动、信息过载，都会提高身体的紧张基线。</p>
+      </div>
+      <div class="cause-item">
+        <h3>社会环境与文化期待</h3>
+        <p>对“必须优秀”“不能出错”的强调，会让人把自我价值与表现绑定，从而难以允许自己松弛。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 调适方法 -->
+  <section id="methods">
+    <div class="sec-head">
+      <h2>可以尝试的调适方向</h2>
+      <span class="note">从能做的开始，而不是从最难的开始</span>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <div>
+          <h3>先把不安“说清楚”</h3>
+          <p>拿一张纸，写下此刻具体在担心什么。把模糊的“我很不安”拆成可描述的事件、可能性和后果。书写本身就是一种整理，能降低思绪的失控感。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <div>
+          <h3>用呼吸和身体回到当下</h3>
+          <p>缓慢呼吸、感受脚踩地面的触感、放松肩颈。身体放松时，神经系统会收到“现在相对安全”的信号，情绪强度通常会有所下降。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <div>
+          <h3>区分“可控制”与“不可控制”</h3>
+          <p>把担忧分成两类：能行动的部分和只能接受的部分。对前者列出下一步，对后者练习暂时放下。把精力集中在可行动处，能减少无力感。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <div>
+          <h3>调整生活节律</h3>
+          <p>规律作息、适度运动、减少睡前刷屏和过量咖啡因。这些看似基础的做法，对稳定情绪基线的作用常常被低估。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">05</div>
+        <div>
+          <h3>建立可依靠的关系</h3>
+          <p>与信任的人谈一谈，不必寻求解决方案，被听见本身就有缓冲作用。如果长期独自承受，可以考虑寻求心理咨询等专业支持。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">06</div>
+        <div>
+          <h3>允许自己“暂时不安”</h3>
+          <p>不必要求自己立刻平静。与不安对抗往往会让它更强。承认“我现在确实不安”，反而能腾出一点空间，让情绪自然流动。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 状态对照 -->
+  <section id="compare">
+    <div class="sec-head">
+      <h2>不同强度下的状态对照</h2>
+      <span class="note">帮助判断当前状态，而非自我诊断</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>状态</th>
+            <th>典型感受</th>
+            <th>对生活的影响</th>
+            <th>可优先考虑的方向</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>一般性紧张</strong></td>
+            <td>面对具体事件时短暂担心，事件结束后能恢复</td>
+            <td>基本不影响日常功能</td>
+            <td>规律作息、适度运动、简单放松练习</td>
+          </tr>
+          <tr>
+            <td><strong>持续性不安</strong></td>
+            <td>担忧较频繁，空闲时更明显，身体常紧绷</td>
+            <td>开始影响睡眠、专注和情绪</td>
+            <td>书写梳理、调整认知习惯、减少信息过载</td>
+          </tr>
+          <tr>
+            <td><strong>明显困扰</strong></td>
+            <td>难以控制地反复担忧，伴随心慌、失眠等</td>
+            <td>影响工作、学习或人际关系</td>
+            <td>寻求心理咨询或精神科评估</td>
+          </tr>
+          <tr>
+            <td><strong>需要及时关注</strong></td>
+            <td>强烈不安持续存在，或出现明显躯体反应</td>
+            <td>日常功能显著受限</td>
+            <td>尽快联系专业医疗机构获取帮助</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 注意事项 -->
+  <section>
+    <div class="notice">
+      <h3>几点需要留意的事</h3>
+      <p>本页内容用于一般性了解与自我关照，不构成医学诊断或治疗建议。若不安情绪持续存在、明显影响生活，或伴随强烈的躯体不适，请及时咨询精神科医生或专业心理咨询师。</p>
+      <p>如果出现伤害自己或他人的念头，请立即联系当地急救或心理援助热线，不要独自承受。</p>
+      <p>网络上的自助方法可以辅助，但不能替代面对面的专业评估。每个人的情况不同，适合他人的方式未必适合你，重要的是找到稳定、可持续的支持。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="sec-head">
+      <h2>关于不安人的常见问题</h2>
+      <span class="note">点击问题展开回答</span>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">不安和焦虑是一回事吗？</button>
+      <div class="faq-a">
+        <p>日常语境中两者常被混用。不安更偏向一种持续、弥散的紧张感；焦虑在专业语境中有更具体的界定，可能包含明显的躯体反应和回避行为。是否达到需要干预的程度，通常要看持续时间、强度和对生活功能的影响。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">不安的人是不是想太多、太脆弱？</button>
+      <div class="faq-a">
+        <p>不是。不安的形成与气质、经历、环境和压力都有关系，把它归因于“想太多”或“不够坚强”，既不准确，也容易让人更加自责。理解它的来路，比评判它更有帮助。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">不安情绪能自己缓解吗？</button>
+      <div class="faq-a">
+        <p>轻度的、与具体事件相关的不安，常会随着事件过去和生活调整而缓解。规律作息、运动、减少刺激、与人交流都有帮助。但如果不安长期存在或不断加重，单靠自我调节往往不够，专业支持会更有效。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">什么时候应该考虑寻求专业帮助？</button>
+      <div class="faq-a">
+        <p>可以参考几个信号：不安持续数周以上、自己难以缓解、明显影响睡眠或工作、开始回避重要场合、或伴随强烈的身体不适。出现这些情况时，向心理咨询师或精神科医生咨询是稳妥的选择。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">身边的人很不安，我能做什么？</button>
+      <div class="faq-a">
+        <p>先倾听，少急着给建议或否定对方的感受。可以表达“我在”“我理解你现在很难受”。如果对方愿意，陪伴其了解专业资源。避免说“这有什么好担心的”，这类回应往往加重孤立感。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>不安人 · 情绪观察站</h4>
+        <p>一个围绕不安情绪展开的科普与自助信息页面，帮助读者理解情绪、认识自身状态，并找到合适的支持方向。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#understand">理解不安</a></li>
+          <li><a href="#signs">常见表现</a></li>
+          <li><a href="#causes">成因分析</a></li>
+          <li><a href="#methods">调适方法</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>重要提示</h4>
+        <ul>
+          <li>本页不提供医疗诊断</li>
+          <li>不替代专业心理服务</li>
+          <li>如有需要请及时求助</li>
+          <li>照顾好自己，也允许被照顾</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 不安人 · 情绪观察站 &nbsp;|&nbsp; 内容仅供一般性参考，请以专业意见为准
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item){
+      var btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(other){ other.classList.remove('open'); });
+        if(!isOpen){ item.classList.add('open'); }
+      });
+    });
+  })();
+</script>
+
+</body>
+      </html>
